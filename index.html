@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Notes</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./bootstrap.css">
+</head>
+
+  <style>
+    .text-area{
+      width: 120px;
+      height: 120px;
+      resize: none;
+      outline: none;
+      border: none;
+      background-color: rgb(238, 240, 105);
+      
+    }
+
+    .text-area{
+      font-size: 18px;
+    }
+
+    .sticky-box{
+      width: 180px;
+      height: 180px;
+      background-color: rgb(238, 240, 105);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .btn-div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 25px;
+    }
+
+    .add-btn{
+      width: 180px;
+      height: 180px;
+      border: 3px dashed black;
+      border-radius: 10px;
+      font-size: 60px;
+    }
+
+  </style>
+
+<body>
+    <div class="container pt-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="fw-bold">Sticky Notes</h1>
+        <div id="alert-box"></div>
+        <button id="clearAll" class="btn btn-danger">Clear All</button>
+      </div>
+      <div class="d-flex mt-4 flex-wrap gap-2">
+        <div class="box-wrapper d-flex flex-wrap gap-2"></div>
+      <div id="addBtn" class="add-btn d-flex justify-content-center align-items-center">
+        <i class='bx bx-plus-circle'></i>
+      </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
